@@ -12,7 +12,7 @@ echo $pip
 
 #scp $filename $username@$pip:/home
 
-ssh $pip@$username 
+ssh $username@pip 
 
 cd ~
 wget -O $filename https://raw.githubusercontent.com/wrijugh/ckad-all/main/setup-dev-linux.sh
