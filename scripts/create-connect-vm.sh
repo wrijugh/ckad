@@ -1,5 +1,3 @@
-#!/bin/bash
-
 location='eastus'
 rgroup='rg-vm'
 vmname='vm-ubuntu-temp'
@@ -12,9 +10,12 @@ az vm create -g $rgroup -n $vmname --image UbuntuLTS --size Standard_DS2 --authe
 pip=$(az vm show -d -g rg-vm -n vm-ubuntu-temp --query 'publicIps' -o tsv)
 echo $pip
 
-scp $filename $username@$pip:/home
+#scp $filename $username@$pip:/home
 
 ssh $pip@$username 
 
 cd ~
+wget -O $filename https://raw.githubusercontent.com/wrijugh/ckad-all/main/setup-dev-linux.sh
 chmod +x $filename
+echo 
+./$filename
