@@ -1,6 +1,6 @@
 # CKAD - Certified Kubernetes Application Developer
 
-## Prepation Guide
+### ***Prepation Guide*** by ***Wriju Ghosh*** ([@wrijugh](https://twitter.com/wrijugh))
 
 ## Introduction
 
@@ -21,6 +21,7 @@ It's a journey by all means. Even in the toughest circumstances if I could not c
 - **Practice** **Practice** **Practice** - key to the success. Once you are comfortable solving the problems go for time bound practice. Use stopwatch and solve as quickly as possible. If you are well prepared then probably there is no proble which you can't solve. **Time management** is the key.
 
 ## Steps to prepare
+
 Since the exam happens in a Linux terminal having an understanding and comfort working with Linux is the key success factor here. You need to be comfortable with basic Linux commands, simple bash scripts, and the most important of all is very comfortable with Vim editor. If you struggle during the exam while copying a content from documentation to Vim and format is damaged, then you will be losing out your precious time. So get used to with Vim and try to be faster as much as possible. There are a lot of tips and tricks available online go through some of them as you are working on to editing/modifying YAML files.
 
 If you are already a seasoned Linux user then you may skip the below step and go directly to the core Kubernetes Objects and Concepts.  
@@ -29,19 +30,31 @@ I have design the below steps keeping in mind that the candidate it's not comfor
 
 ![Learning Path](images/CKAD-prep.png)
 
-Now let's handle them one by one:
+*Now let's handle them one by one:*
 
 ## Basic Linux Commands
 
 Only few but you muct be comfortable with most of them.
 
 ## Bash Script
-Comming soon
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u-qwznq_TaA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/u-qwznq_TaA)
 ## Vim Editor
-Comming soon
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kkjGsswEDD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Links](https://youtu.be/kkjGsswEDD0)
+
 ## YAML
+
 Comming soon
-## Docker 
+
+## Docker
+
 Comming soon
+
 ## Kubernetes
+
 Comming soon
