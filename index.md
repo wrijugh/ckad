@@ -45,7 +45,11 @@ You will encounter often times with the Linux command prompt. Because the CKAD e
 
 ## Bash Script
 
-Coming soon...
+Bash script or Shell script it's not that important but it keeps popping up while you work on container. For example, you might need to run a command which will keep your container running for 3600 seconds. If you know bash script, then you know there is command called sleep followed by the number of specified well keep your interactive terminal wedding for the specified seconds. These are not very in-depth automation kind of script you have to understand but good to know some basic Shell scripts construct which will help you during the exam as well as while working with Kubectl.
+
+
+
+TODO: Coming soon...
 
 ## Vim Editor
 
@@ -59,8 +63,10 @@ Vim or Vi modified is the default editor for Linux operating system. Unlike othe
 
 ## YAML
 
-I found this nice 18 min video from Nana. I recommend we all watch this. This basic understanding would help. Because is the backbone of Kubernetes.
- 
+I found this nice 18 min video from Nana. I recommend we all watch this. This basic understanding would help. Because it is the backbone of Kubernetes.
+
+[**YAML.org**](https://yaml.org/spec/1.2/spec.html)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1uFVr15xDGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/1uFVr15xDGg)
@@ -68,8 +74,12 @@ Comming soon
 
 ## Docker
 
-Comming soon
+Kubernetes runs container. But it is not mandatory to have only docker as its container runtime. The default comes with docker. However, Kubernetes manages Pod not the container. Having a little bit of idea about how Docker container works could help clarify some of the command line activities to understand the basics. Let's have a small video.
+
+Comming soon..
 
 ## Kubernetes
 
-Comming soon
+CKAD exam is a performance-based exam. That means you will be given Linux console and asked to solve certain problems. There is no objective type question. This means you not only have two know hands on about Kubernetes but also be very comfortable and quick in solving the problems. In this section I will try to share some of the tips and tricks of using Kubectl and configuring few basic stuff.
+
+Comming soon..
