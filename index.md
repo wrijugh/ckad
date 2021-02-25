@@ -1,4 +1,4 @@
-# Certified Kubernetes Application Developer aka CKAD
+# CKAD - Certified Kubernetes Application Developer
 
 ## Prepation Guide
 
@@ -27,4 +27,21 @@ If you are already a seasoned Linux user then you may skip the below step and go
 
 I have design the below steps keeping in mind that the candidate it's not comfort working with Linux. Either they come from pure Windows background or new to Linux world.
 
-![](images/CKAD-learning-path.png)
+![Learning Path](images/CKAD-prep.png)
+
+Now let's handle them one by one:
+
+## Basic Linux Commands
+
+Only few but you muct be comfortable with most of them.
+
+## Bash Script
+Comming soon
+## Vim Editor
+Comming soon
+## YAML
+Comming soon
+## Docker 
+Comming soon
+## Kubernetes
+Comming soon
