@@ -34,14 +34,24 @@ I have design the below steps keeping in mind that the candidate it's not comfor
 
 ## Basic Linux Commands
 
-Only few but you muct be comfortable with most of them.
+You will encounter often times with the Linux command prompt. Because the CKAD exam uses one of the Linux distributions. If you happen to not come from the Linux world it'll be intimidating. You might  get stuck on few things due to the lack of practice. Hence it is absolutely important to feel comfortable with Linux commands, at least the basic file handling etc.
 
-## Bash Script
+- [Create folders and files](https://ubuntu.com/tutorials/command-line-for-beginners#4-creating-folders-and-files)
+- [Moving and manipulating files](https://ubuntu.com/tutorials/command-line-for-beginners#5-moving-and-manipulating-files)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u-qwznq_TaA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/u-qwznq_TaA)
+
+## Bash Script
+
+Coming soon...
+
 ## Vim Editor
+
+Vim or Vi modified is the default editor for Linux operating system. Unlike other text editors like notepad, sublime, notepad++, word processor – Vim plays in a completely different world. People coming from non Linux background using Windows for the first time can get frustrated with the weird behavior. But for a seasoned Linux users it is the most efficient editors ever available in Linux. If you happen to see a Linux user working on vim, you will be amazed to see how fast it can go. If you know the tricks you can do magic. In this short video I tried to demonstrate the capabilities from a purely Windows user perspective. Hope you will enjoy this will too.
+
+[**Vim Cheat Sheet**](https://vim.rtorr.com/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kkjGsswEDD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
