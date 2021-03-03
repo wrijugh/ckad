@@ -47,9 +47,11 @@ You will encounter often times with the Linux command prompt. Because the CKAD e
 
 Bash script or Shell script it's not that important but it keeps popping up while you work on container. For example, you might need to run a command which will keep your container running for 3600 seconds. If you know bash script, then you know there is command called sleep followed by the number of specified well keep your interactive terminal wedding for the specified seconds. These are not very in-depth automation kind of script you have to understand but good to know some basic Shell scripts construct which will help you during the exam as well as while working with Kubectl.
 
+[**Shell Scripting Tutorial**](https://www.tutorialspoint.com/unix/shell_scripting.htm)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CdY5gb1wqLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-TODO: Coming soon...
+[Direct Video Link](https://youtu.be/CdY5gb1wqLs)
 
 ## Vim Editor
 
@@ -70,13 +72,16 @@ I found this nice 18 min video from Nana. I recommend we all watch this. This ba
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1uFVr15xDGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/1uFVr15xDGg)
-Comming soon
 
 ## Docker
 
 Kubernetes runs container. But it is not mandatory to have only docker as its container runtime. The default comes with docker. However, Kubernetes manages Pod not the container. Having a little bit of idea about how Docker container works could help clarify some of the command line activities to understand the basics. Let's have a small video.
 
-Comming soon..
+[**Introduction to Docker containers**](https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OFiDKX1570Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/OFiDKX1570Y)
 
 ## Kubernetes
 
