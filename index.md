@@ -69,6 +69,8 @@ I found this nice 18 min video from Nana. I recommend we all watch this. This ba
 
 [**YAML.org**](https://yaml.org/spec/1.2/spec.html)
 
+[**Introduction to YAML - by Wriju**](YAML-Intro.md)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1uFVr15xDGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/1uFVr15xDGg)

@@ -48,6 +48,7 @@ cleared: true
 deployed: yes
 vmStatus: on
 ```
+
 > Both `yes`,`true`,'`on` are the same. They mean `1`. Any of the three pairs can be used here, `yes-no`, `on-off`, `true-false`.
 
 #### **string**
@@ -135,7 +136,7 @@ commentSingleLine: >
 
 ### Multiple YAMLs in a single file
 
-By using `---` (three dashes) you can add multiple YAMLs in a single file 
+By using `---` (three dashes) you can add multiple YAMLs in a single file
 
 ```yaml
 class: III
