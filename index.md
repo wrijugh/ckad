@@ -85,8 +85,34 @@ Kubernetes runs container. But it is not mandatory to have only docker as its co
 
 [Direct Video Link](https://youtu.be/OFiDKX1570Y)
 
-## Kubernetes Tips
+## Kubernetes under 10 minute
 
 CKAD exam is a performance-based exam. That means you will be given Linux console and asked to solve certain problems. There is no objective type question. This means you not only have two know hands on about Kubernetes but also be very comfortable and quick in solving the problems. In this section I will try to share some of the tips and tricks of using Kubectl and configuring few basic stuff.
 
-Comming soon..
+### Tip 1 : Using Katacoda - A free Kubernetes Playground
+
+[Katacoda](http://katacoda.com) is a nice place to start with Kubernetes. It is a browser based playground and does not require any local installation. One can start immediately without spending much time on setting up the Kubernetes locally or in a VM. 
+
+This video talks about how we can use Katacoda. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k_zsnPj1VrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/k_zsnPj1VrM)
+
+### Tip 2 : Breaking the myths - CKAD does not require programming knowledge
+
+CKAD (Certified Kubernetes Application Developer) the word "Developer" does not mean that it will ask you to write code. If you have no development experience and never done any programming then don't worry - none of those skills are required here. So have a look into the CNCF's official curriculam and jump into it. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/25VKXVzhIz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/25VKXVzhIz4)
+
+### Tip 3 : Pod and Container
+
+In Kubernetes what is the relationship between pod and container? Let's understand it a bit. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aq7dLCpsO20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/aq7dLCpsO20)
+
+
+

@@ -34,7 +34,7 @@ Yaml is hierarchical, hence it can have child elements with indentation (use spa
 
 ```yaml
 class: III
-  studentName: Wrishika Ghosh
+studentName: Wrishika Ghosh
 ```
 
 ### Supported Types
