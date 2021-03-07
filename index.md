@@ -16,9 +16,9 @@ It's a journey by all means. Even in the toughest circumstances if I could not c
 - This is a **performance-based** exam. A browser-based console will be given to work on. There is no need to install any additional software apart from a small extension for the Chrome or Chromium browser.
 - For the exam environment details and candidate Handbook please visit the official [CNCF portal](https://www.cncf.io/certification/ckad/) for the most up-to-date details. I would highly recommend not to rely on any individual, independent or third party blog about the exam environment, because the information can go outdated. 
   - [Candidate Handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
-  - [Curriculam](https://github.com/cncf/curriculum) - refer this for latest one
+  - [Curriculum](https://github.com/cncf/curriculum) - refer this for latest one
   - Very useful [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
-- **Practice** **Practice** **Practice** - key to the success. Once you are comfortable solving the problems go for time bound practice. Use stopwatch and solve as quickly as possible. If you are well prepared then probably there is no proble which you can't solve. **Time management** is the key.
+- **Practice** **Practice** **Practice** - key to the success. Once you are comfortable solving the problems go for time bound practice. Use stopwatch and solve as quickly as possible. If you are well prepared then probably there is no problem which you can't solve. **Time management** is the key.
 
 ## Steps to prepare
 
@@ -26,7 +26,7 @@ Since the exam happens in a Linux terminal having an understanding and comfort w
 
 If you are already a seasoned Linux user then you may skip the below step and go directly to the core Kubernetes Objects and Concepts.  
 
-I have design the below steps keeping in mind that the candidate it's not comfort working with Linux. Either they come from pure Windows background or new to Linux world.
+I have designed the below steps keeping in mind that the candidate it's not comfort working with Linux. Either they come from pure Windows background or new to Linux world.
 
 ![Learning Path](images/CKAD-prep.png)
 
