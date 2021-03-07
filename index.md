@@ -198,3 +198,8 @@ A CronJob creates Jobs on a repeating schedule.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OigbgMm3_C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 https://youtu.be/OigbgMm3_C4
+
+## Kubernetes CKAD Tips 14 – Services (ClusterIP, NodePort, LoadBalancer)
+
+## Kubernetes CKAD Tips 15 – Multi-container Pod
+
