@@ -41,7 +41,7 @@ You will encounter often times with the Linux command prompt. Because the CKAD e
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u-qwznq_TaA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/u-qwznq_TaA)
+https://youtu.be/u-qwznq_TaA
 
 ## Basic Shell Scripting
 
@@ -51,7 +51,7 @@ Bash script or Shell script it's not that important but it keeps popping up whil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CdY5gb1wqLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/CdY5gb1wqLs)
+https://youtu.be/CdY5gb1wqLs
 
 ## Vim Editor
 
@@ -61,7 +61,7 @@ Vim or Vi modified is the default editor for Linux operating system. Unlike othe
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kkjGsswEDD0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Links](https://youtu.be/kkjGsswEDD0)
+https://youtu.be/kkjGsswEDD0
 
 ## Intro to YAML
 
@@ -73,7 +73,7 @@ I found this nice 18 min video from Nana. I recommend we all watch this. This ba
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1uFVr15xDGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/1uFVr15xDGg)
+https://youtu.be/1uFVr15xDGg
 
 ## Docker Basics
 
@@ -83,7 +83,7 @@ Kubernetes runs container. But it is not mandatory to have only docker as its co
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OFiDKX1570Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/OFiDKX1570Y)
+https://youtu.be/OFiDKX1570Y
 
 ---
 
@@ -99,7 +99,7 @@ This video talks about how we can use Katacoda.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k_zsnPj1VrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/k_zsnPj1VrM)
+https://youtu.be/k_zsnPj1VrM
 
 ## Kubernetes CKAD Tips 2 - Breaking the myths - CKAD does not require programming knowledge
 
@@ -107,7 +107,7 @@ CKAD (Certified Kubernetes Application Developer) the word "Developer" does not 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/25VKXVzhIz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/25VKXVzhIz4)
+https://youtu.be/25VKXVzhIz4
 
 ## Kubernetes CKAD Tips 3 - Pod and Container
 
@@ -115,7 +115,7 @@ In Kubernetes we need to manage Pod which hosts the container(s). In Kubernetes 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aq7dLCpsO20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/aq7dLCpsO20)
+https://youtu.be/aq7dLCpsO20
 
 ## Kubernetes CKAD Tips 4 - Troubleshooting Pods
 
@@ -123,7 +123,7 @@ When you create a Pod it generally gets created if the syntax is correct. At lea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w4BGWdMCx88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/w4BGWdMCx88)
+https://youtu.be/w4BGWdMCx88
 
 ## Kubernetes CKAD Tips 5 – Namespaces
 
@@ -132,7 +132,7 @@ Names of the resources within a Namespace should be unique. Namespaces cannot be
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7dcyUXbbEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/F7dcyUXbbEY)
+https://youtu.be/F7dcyUXbbEY
 
 ## Kubernetes CKAD Tips 6 – Configuring Kubectl context
 
@@ -140,14 +140,14 @@ Often time we work with multiple Kubernetes clusters and namespaces from a singl
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PkyKI_-nIMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/PkyKI_-nIMM)
+https://youtu.be/PkyKI_-nIMM
 ## Kubernetes CKAD Tips 7 – Getting help
 
 In my opinion Kubernetes CLI documentation is the best. You get pretty much everything you need including the syntax help with examples. Let’s learn how to use the CLI help.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_rTWoRmbgCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/_rTWoRmbgCY)
+https://youtu.be/_rTWoRmbgCY
 ## Kubernetes CKAD Tips 8 – Deployments
 
 A Deployment provides declarative updates for Pods and ReplicaSets.
@@ -155,7 +155,7 @@ You describe a desired state in a Deployment, and the Deployment Controller chan
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KuSc9yPjcyw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/KuSc9yPjcyw)
+https://youtu.be/KuSc9yPjcyw
 
 ## Kubernetes CKAD Tips 9 – Rolling Updates in Deployment
 
@@ -164,7 +164,7 @@ In a real production environment, we don't manage Pods rather Kubernetes deploym
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mntc_h6nKAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/mntc_h6nKAc)
+https://youtu.be/mntc_h6nKAc
 
 ## Kubernetes CKAD Tips 10 – Labels
 
@@ -172,7 +172,7 @@ Labels in Kubernetes are a very humble but important component. Through labels K
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AE1ZiIizH4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/AE1ZiIizH4Q)
+https://youtu.be/AE1ZiIizH4Q
 
 ## Kubernetes CKAD Tips 11 – Annotations
 
@@ -181,7 +181,7 @@ You can use either labels or annotations to attach metadata to Kubernetes object
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VctAhNXbUFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/VctAhNXbUFo)
+https://youtu.be/VctAhNXbUFo
 
 ## Kubernetes CKAD Tips 12 – Jobs
 
@@ -189,7 +189,7 @@ A Job creates one or more Pods and will continue to retry execution of the Pods 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8wZxLuOjV_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/8wZxLuOjV_c)
+https://youtu.be/8wZxLuOjV_c
 
 ## Kubernetes CKAD Tips 13 – CronJobs
 
@@ -197,4 +197,4 @@ A CronJob creates Jobs on a repeating schedule.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OigbgMm3_C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Direct Video Link](https://youtu.be/OigbgMm3_C4)
+https://youtu.be/OigbgMm3_C4
