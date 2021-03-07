@@ -1,6 +1,6 @@
 # CKAD - Certified Kubernetes Application Developer
 
-### ***Prepation Guide*** by ***Wriju Ghosh*** ([@wrijugh](https://twitter.com/wrijugh))
+## ***Prepation Guide*** by ***Wriju Ghosh*** ([@wrijugh](https://twitter.com/wrijugh))
 
 ## Introduction
 
@@ -85,34 +85,58 @@ Kubernetes runs container. But it is not mandatory to have only docker as its co
 
 [Direct Video Link](https://youtu.be/OFiDKX1570Y)
 
-## Kubernetes under 10 minute
+---
+
+## Kubernetes under 10 minutes
 
 CKAD exam is a performance-based exam. That means you will be given Linux console and asked to solve certain problems. There is no objective type question. This means you not only have two know hands on about Kubernetes but also be very comfortable and quick in solving the problems. In this section I will try to share some of the tips and tricks of using Kubectl and configuring few basic stuff.
 
-### Tip 1 : Using Katacoda - A free Kubernetes Playground
+## Kubernetes CKAD Tips 1 - Using Katacoda - A free Kubernetes Playground
 
-[Katacoda](http://katacoda.com) is a nice place to start with Kubernetes. It is a browser based playground and does not require any local installation. One can start immediately without spending much time on setting up the Kubernetes locally or in a VM. 
+[Katacoda](http://katacoda.com) is a nice place to start with Kubernetes. It is a browser-based playground and does not require any local installation. One can start immediately without spending much time on setting up the Kubernetes locally or in a VM.
 
-This video talks about how we can use Katacoda. 
+This video talks about how we can use Katacoda.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k_zsnPj1VrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/k_zsnPj1VrM)
 
-### Tip 2 : Breaking the myths - CKAD does not require programming knowledge
+## Kubernetes CKAD Tips 2 - Breaking the myths - CKAD does not require programming knowledge
 
-CKAD (Certified Kubernetes Application Developer) the word "Developer" does not mean that it will ask you to write code. If you have no development experience and never done any programming then don't worry - none of those skills are required here. So have a look into the CNCF's official curriculam and jump into it. 
+CKAD (Certified Kubernetes Application Developer) the word "Developer" does not mean that it will ask you to write code. If you have no development experience and never done any programming then don't worry - none of those skills are required here. So have a look into the CNCF's official curriculum and jump into it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/25VKXVzhIz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/25VKXVzhIz4)
 
-### Tip 3 : Pod and Container
+## Kubernetes CKAD Tips 3 - Pod and Container
 
-In Kubernetes what is the relationship between pod and container? Let's understand it a bit. 
+In Kubernetes we need to manage Pod which hosts the container(s). In Kubernetes what is the relationship between pod and container? The concept of Pod is unique in Kubernetes. Let's understand it a bit.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aq7dLCpsO20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Direct Video Link](https://youtu.be/aq7dLCpsO20)
 
+## Kubernetes CKAD Tips 4 - Troubleshooting Pods
 
+When you create a Pod it generally gets created if the syntax is correct. At least the CLI says so. It is mainly because the Kubernetes API checks everything and accepts the instruction. Later the Kubernetes schedular picks it up and deploys. By the time it is accepted to the time it is deployed many things could happen. Also, if the image used in Pod’s container is wrong Kubernetes API can’t figure it out unless it deploys it. So, it gets to know about the image unavailability during the creation process. Also, there could be an issue with available CPU and memory of the Node. Let’s see the different ways to build and deploy the Kubernetes Pod and if any problem how to find it out and can be sorted.
 
+[Direct Video Link](https://youtu.be/)
+
+## Kubernetes CKAD Tips 5 – Namespaces
+
+Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces.
+Names of the resources within a Namespace should be unique. Namespaces cannot be nested. 
+
+## Kubernetes CKAD Tips 6 – Configuring Kubectl context
+
+Often time we work with multiple Kubernetes clusters and namespaces from a single console. Hence switching between the clusters and console is important. Let’s learn few **kubectl** command to do it switching. 
+
+## Kubernetes CKAD Tips 7 – Getting help
+
+In my opinion Kubernetes CLI documentation is the best. You get pretty much everything you need including the syntax help with examples. Let’s learn how to use the CLI help.
+
+## Kubernetes CKAD Tips 8 – Deployments
+
+A Deployment provides declarative updates for Pods and ReplicaSets.
+You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to the desired state at a controlled rate. You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
