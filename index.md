@@ -121,22 +121,68 @@ In Kubernetes we need to manage Pod which hosts the container(s). In Kubernetes 
 
 When you create a Pod it generally gets created if the syntax is correct. At least the CLI says so. It is mainly because the Kubernetes API checks everything and accepts the instruction. Later the Kubernetes schedular picks it up and deploys. By the time it is accepted to the time it is deployed many things could happen. Also, if the image used in Pod’s container is wrong Kubernetes API can’t figure it out unless it deploys it. So, it gets to know about the image unavailability during the creation process. Also, there could be an issue with available CPU and memory of the Node. Let’s see the different ways to build and deploy the Kubernetes Pod and if any problem how to find it out and can be sorted.
 
-[Direct Video Link](https://youtu.be/)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w4BGWdMCx88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/w4BGWdMCx88)
 
 ## Kubernetes CKAD Tips 5 – Namespaces
 
 Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces.
-Names of the resources within a Namespace should be unique. Namespaces cannot be nested. 
+Names of the resources within a Namespace should be unique. Namespaces cannot be nested.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F7dcyUXbbEY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/F7dcyUXbbEY)
 
 ## Kubernetes CKAD Tips 6 – Configuring Kubectl context
 
-Often time we work with multiple Kubernetes clusters and namespaces from a single console. Hence switching between the clusters and console is important. Let’s learn few **kubectl** command to do it switching. 
+Often time we work with multiple Kubernetes clusters and namespaces from a single console. Hence switching between the clusters and console is important. Let’s learn few **kubectl** command to do it switching.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PkyKI_-nIMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/PkyKI_-nIMM)
 ## Kubernetes CKAD Tips 7 – Getting help
 
 In my opinion Kubernetes CLI documentation is the best. You get pretty much everything you need including the syntax help with examples. Let’s learn how to use the CLI help.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_rTWoRmbgCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/_rTWoRmbgCY)
 ## Kubernetes CKAD Tips 8 – Deployments
 
 A Deployment provides declarative updates for Pods and ReplicaSets.
 You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to the desired state at a controlled rate. You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KuSc9yPjcyw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/KuSc9yPjcyw)
+
+## Kubernetes CKAD Tips 9 – Rolling Updates in Deployment
+
+In a real production environment, we don't manage Pods rather Kubernetes deployment manages the Pods. However, if there is a change or update required, we prefer not to shut down the whole environment but rather roll it over slowly. If you have four replicas then probably it will take down one at a time and update 4 pods one after another, rather than doing altogether. This purely depends on the requirement of your application, if you don't want to have any older version running while updating the newer version, you can have the complete update without choosing the rollout kind of behavior.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mntc_h6nKAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/mntc_h6nKAc)
+
+## Kubernetes CKAD Tips 10 – Labels
+
+Labels in Kubernetes are a very humble but important component. Through labels Kubernetes objects like deployment, services are connected to the core component Pod. Labels are not mandatory. You can create an object without a Label. Labels can be added or modified later as well. Together with selector label helps connect loosely coupled objects.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AE1ZiIizH4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/AE1ZiIizH4Q)
+
+## Kubernetes CKAD Tips 11 – Annotations
+
+You can use Kubernetes annotations to attach arbitrary non-identifying metadata to objects. Clients such as tools and libraries can retrieve this metadata.
+You can use either labels or annotations to attach metadata to Kubernetes objects. Labels can be used to select objects and to find collections of objects that satisfy certain conditions. In contrast, annotations are not used to identify and select objects. The metadata in an annotation can be small or large, structured or unstructured, and can include characters not permitted by labels.
+
+## Kubernetes CKAD Tips 12 – Jobs
+
+A Job creates one or more Pods and will continue to retry execution of the Pods until a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions. When a specified number of successful completions is reached, the task (ie, Job) is complete. Deleting a Job will clean up the Pods it created.
+
+## Kubernetes CKAD Tips 13 – CronJobs
+
+A CronJob creates Jobs on a repeating schedule.
