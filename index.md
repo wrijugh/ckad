@@ -179,10 +179,22 @@ Labels in Kubernetes are a very humble but important component. Through labels K
 You can use Kubernetes annotations to attach arbitrary non-identifying metadata to objects. Clients such as tools and libraries can retrieve this metadata.
 You can use either labels or annotations to attach metadata to Kubernetes objects. Labels can be used to select objects and to find collections of objects that satisfy certain conditions. In contrast, annotations are not used to identify and select objects. The metadata in an annotation can be small or large, structured or unstructured, and can include characters not permitted by labels.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VctAhNXbUFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/VctAhNXbUFo)
+
 ## Kubernetes CKAD Tips 12 – Jobs
 
 A Job creates one or more Pods and will continue to retry execution of the Pods until a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions. When a specified number of successful completions is reached, the task (ie, Job) is complete. Deleting a Job will clean up the Pods it created.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8wZxLuOjV_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/8wZxLuOjV_c)
+
 ## Kubernetes CKAD Tips 13 – CronJobs
 
 A CronJob creates Jobs on a repeating schedule.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OigbgMm3_C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Direct Video Link](https://youtu.be/OigbgMm3_C4)
