@@ -43,7 +43,7 @@ You will encounter often times with the Linux command prompt. Because the CKAD e
 
 [https://youtu.be/u-qwznq_TaA](https://youtu.be/u-qwznq_TaA)
 
-## Basic Shell Scripti
+## Basic Shell Scripting
 
 Bash script or Shell script it's not that important but it keeps popping up while you work on container. For example, you might need to run a command which will keep your container running for 3600 seconds. If you know bash script, then you know there is command called sleep followed by the number of specified well keep your interactive terminal wedding for the specified seconds. These are not very in-depth automation kind of script you have to understand but good to know some basic Shell scripts construct which will help you during the exam as well as while working with Kubectl.
 
@@ -201,5 +201,19 @@ A CronJob creates Jobs on a repeating schedule.
 
 ## Kubernetes CKAD Tips 14 – Services (ClusterIP, NodePort, LoadBalancer)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_sxGRlMza-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/_sxGRlMza-0](https://youtu.be/_sxGRlMza-0)
 ## Kubernetes CKAD Tips 15 – Multi-container Pod
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_sxGRlMza-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/N-4CFB7U8gU](https://youtu.be/N-4CFB7U8gU)
+
+
+---
+More coming soon...
+
+Subscribe to the Channel [TechTalks-Wriju](https://www.youtube.com/channel/UCUzFKvlZOm3ukAiF59B_HgQ)
+
+The [Kubernetes and CKAD Playlist](https://www.youtube.com/playlist?list=PLPIVZsyfpXt-wyNY65-aC9Vm_PEsM3pR8)
