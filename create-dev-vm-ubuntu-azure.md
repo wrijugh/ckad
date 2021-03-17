@@ -175,4 +175,10 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start
 ```
 
+## Connecting Remote Ubuntu from Visual Studio Code
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UkiPauLyzg4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/UkiPauLyzg4](https://youtu.be/UkiPauLyzg4)
+
 This should ideally setup your dev environment. Enjoy.
