@@ -44,7 +44,7 @@ n="vm-ubuntu-wg"
 g="rg-ubuntu"
 l=eastus
 
-admin="ubuntu-admin"
+admin="ubuntuadmin"
 passwd="TwelveCharecter123!@#"
 vmname="ubuntu-dev"
 size="Standard_DS2_v2"
