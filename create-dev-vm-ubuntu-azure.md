@@ -40,7 +40,6 @@ az account set --subscription {{name/guid}}
 Now you can create the Azure Resource Group and the VM from the below Script by either copying each line one by one and pasting it to Azure CLi or by creating a `.sh` file to run as a whole.
 
 ```sh
-n="vm-ubuntu-wg"
 g="rg-ubuntu"
 l=eastus
 
@@ -69,7 +68,7 @@ In above we have created Resource Group, Virtual Machine, and Auto-Shut down. Bo
 Now it is time to connect the VM or ssh into it through the Public Ip. To get the public ip you can use the below command,
 
 ```sh
-n="vm-ubuntu-wg"
+n="ubuntu-dev"
 g="rg-ubuntu"
 
 az vm show -d -n $n -g $g --query "publicIps" -o tsv
@@ -87,7 +86,7 @@ $ ssh ubuntu-admin@192.168.1.1
 Try to use Sceduled Logic Apps or use the below script
 
 ```sh
-n="vm-ubuntu-wg"
+n="ubuntu-dev"
 g="rg-ubuntu"
 
 az vm start -n $n -g $g
