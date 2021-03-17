@@ -45,7 +45,8 @@ g="rg-ubuntu"
 l=eastus
 
 admin="ubuntuadmin"
-passwd="TwelveCharecter123!@#"
+# Password: 12 letter long one caps, one small, one numeric, one special char atleast
+passwd="TwelveCharecter123!@#" 
 vmname="ubuntu-dev"
 size="Standard_DS2_v2"
 
@@ -58,6 +59,9 @@ az vm create -n $vmname -g $g --admin-username $admin --admin-password $passwd -
 
 echo "--------------- Setting Auto-shutdown (UTC)"
 az vm auto-shutdown -n $vmname -g $g --time 1730
+
+#Public IP will be printed after this too 
+az vm show -d -n $n -g $g --query "publicIps" -o tsv
 ```
 
 In above we have created Resource Group, Virtual Machine, and Auto-Shut down. Boom!!!
