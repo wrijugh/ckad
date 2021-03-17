@@ -32,6 +32,10 @@ I have designed the below steps keeping in mind that the candidate it's not comf
 
 *Now let's handle them one by one:*
 
+## Setup Dev Box
+
+*Optional* [Setup Ubuntu Dev VM in Azure](create-dev-vm-ubuntu-azure.md)
+
 ## Basic Linux Commands
 
 You will encounter often times with the Linux command prompt. Because the CKAD exam uses one of the Linux distributions. If you happen to not come from the Linux world it'll be intimidating. You might  get stuck on few things due to the lack of practice. Hence it is absolutely important to feel comfortable with Linux commands, at least the basic file handling etc.
@@ -193,7 +197,7 @@ A Job creates one or more Pods and will continue to retry execution of the Pods 
 
 ## Kubernetes CKAD Tips 13 – CronJobs
 
-A CronJob creates Jobs on a repeating schedule.
+A CronJob creates Jobs on a repeating schedule. Say a Pod which reminds you to take breakfast every morning at 7 AM. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OigbgMm3_C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -201,15 +205,57 @@ A CronJob creates Jobs on a repeating schedule.
 
 ## Kubernetes CKAD Tips 14 – Services (ClusterIP, NodePort, LoadBalancer)
 
+Pod and deployments are well thought through design components. They help do the horizontal scaling. But what happens when you have more than one Pods how the load balancing would happen. Which IP address the user would connect to? Services comes into play then. Services helps expose Pod(s) via ClusterIP, NodePort or LoadBalancer(to the external world). This enables the Pods to talk to each other. For example if you have a backend Pod that needs to talk to frontend web applications then we don’t connect one pod to another we rather expose them via Service endpoint and connect to each other. Pods are non-persistent which means that they can be recreated by the Kubernetes Scheduler or some change by the system and may also get allocated to another node which has a different IP address altogether. This way Pods are not reliable for DNS mapping. We need something like Kubernetes Service to dynamically select Pods using its labels and map them to the endpoints. That is why Services are key important elements in Kubernetes.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_sxGRlMza-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [https://youtu.be/_sxGRlMza-0](https://youtu.be/_sxGRlMza-0)
 ## Kubernetes CKAD Tips 15 – Multi-container Pod
 
+A Pod generally runs one container most of the time. But it is capable of running more than one containers. So a single pod can host two containers supporting each other for an application need. Assume that your application will cache the data in Redis which is another container. You can host both Application and Redis in same pod. This becomes easier to manage. Also using multi-container we can check the initialization process for an application. In that case we use InitContainer concept. Other kind of multi container patterns include Sidecar and Ambassador pattern.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N-4CFB7U8gU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [https://youtu.be/N-4CFB7U8gU](https://youtu.be/N-4CFB7U8gU)
 
+## Kubernetes CKAD Tips 16 – Init Container
+
+A Pod can have multiple containers running apps within it, but it can also have one or more init containers, which runs before the app containers are started.
+
+Init containers are exactly like regular containers, except:
+
+-Init containers always run to completion.
+-Each init container must complete successfully before the next one starts.
+
+If a Pod's init container fails, the kubelet repeatedly restarts that init container until it succeeds. However, if the Pod has a restartPolicy of Never, and an init container fails during startup of that Pod, Kubernetes treats the overall Pod as failed.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UP6e9grp8nA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/UP6e9grp8nA](https://youtu.be/UP6e9grp8nA)
+
+## Kubernetes CKAD Tips 17 – Liveness Probe
+
+The kubelet uses liveness probes to know when to restart a container. For example, liveness probes could catch a deadlock, where an application is running, but unable to make progress. Restarting a container in such a state can help to make the application more available despite bugs.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/793TftO6iSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/793TftO6iSI](https://youtu.be/793TftO6iSI)
+<!-- ## Kubernetes CKAD Tips 18 – Readiness Probe
+
+The kubelet uses readiness probes to know when a container is ready to start accepting traffic. A Pod is considered ready when all of its containers are ready. One use of this signal is to control which Pods are used as backends for Services. When a Pod is not ready, it is removed from Service load balancers.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/](https://youtu.be/)
+## Kubernetes CKAD Tips 19 – Startup Probe
+
+The kubelet uses startup probes to know when a container application has started. If such a probe is configured, it disables liveness and readiness checks until it succeeds, making sure those probes don't interfere with the application startup. This can be used to adopt liveness checks on slow starting containers, avoiding them getting killed by the kubelet before they are up and running.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/](https://youtu.be/)
+## Kubernetes CKAD Tips 20 – 
+ -->
 
 ---
 More coming soon...
