@@ -65,6 +65,9 @@ In above we have created Resource Group, Virtual Machine, and Auto-Shut down. Bo
 Now it is time to connect the VM or ssh into it through the Public Ip. To get the public ip you can use the below command,
 
 ```sh
+n="vm-ubuntu-wg"
+g="rg-ubuntu"
+
 az vm show -d -n $n -g $g --query "publicIps" -o tsv
 ```
 
@@ -73,6 +76,23 @@ Then using the Public IP ssh into the VM to install the tools
 ```sh
 # 192.168.1.1 Sample Public IP
 $ ssh ubuntu-admin@192.168.1.1
+```
+
+### To start this VM daily
+
+Try to use Sceduled Logic Apps or use the below script
+
+```sh
+n="vm-ubuntu-wg"
+g="rg-ubuntu"
+
+az vm start -n $n -g $g
+```
+
+## To deallocate (stop and release IPs)
+
+```sh
+az vm deallocate -n $n -g $g
 ```
 
 ## Installing Tools
@@ -88,9 +108,12 @@ We will be installing the below tools,
 - Python (already there)
 - Node.js
 
-We have a file. You can make a file like `script.sh` and save to your home directory. Then follow few steps,
+You can make a file like `script.sh` and save to your home directory. Then follow few steps,
 
 ```sh
+# create a blank file
+$ touch script.sh
+
 # make it executable 
 $ chmod +x script.sh
 
@@ -99,6 +122,8 @@ $ ./script.sh
 ```
 
 ### Sample installation shell script
+
+*Copy the whole content to* `script.sh`
 
 ```sh
 #/bin/bash
@@ -109,13 +134,6 @@ sudo apt-get install -y git
 
 echo "-------------- Task 2: Installing Kubectl"
 sudo snap install kubectl --classic
-#sudo apt-get update
-#curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-#curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-#echo "$(<kubectl.sha256) kubectl" | sha256sum --check
-#sudo install -y -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-#mkdir -p ~/.local/bin/kubectl
-#mv ./kubectl ~/.local/bin/kubectl
 
 echo "-------------- Task 3: Installing Azure CLI"
 
@@ -158,17 +176,12 @@ curl -l https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 
 sudo apt-get update
-# yes Y | sudo apt-get install docker-ce
-# yes Y | sudo apt-get install docker-ce-cli
-# yes Y | sudo apt-get install containerd.io
 sudo apt-get install -y docker.io
 
-# yes Y | sudo apt-get install docker-ce
 #sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 
-# Task 9 : Minikube
 echo "-------------- Task 9: Installing and stating Minikube"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
@@ -181,4 +194,7 @@ minikube start
 
 [https://youtu.be/UkiPauLyzg4](https://youtu.be/UkiPauLyzg4)
 
-This should ideally setup your dev environment. Enjoy.
+This should ideally setup your dev environment.
+
+*Enjoy*  
+Wriju @wrijugh
