@@ -6,9 +6,8 @@ There are many ways by which you can create a VM. We will have a script to do so
 
 - Use manages disk. This will immensely reduce the cost of VM as compared to the Standard or Premium SSD which is the default. So if we don't mention that we will use unmanaged disks then Azure CLI will use managed disk with Premium SSD.
   > While doing so you don't need to pre-create a storage. If we consider to create a storage and mention that it will be Locally Redundant then it would first find if there is any such storage matching the criteria. If nothing is found then it would create the storage before creating the VM.
-- Network: Virtual Network, Subnet, Public IP all will be created automatically by Azure CLI before the VM creation.
-- NSG can also be attached to ensure that for Linux SSH port 22 is open.
-- Enable Auto-Shutdown. We must explicitly apply this setting post VM creation it is provisioned.
+- Network: Virtual Network, Subnet, Public IP, NSG (for port 22), NIC all will be created automatically by Azure CLI before the VM creation.
+- Enable Auto-Shutdown. We must explicitly apply this setting post VM creation it is provisioned. A big cost saving.
 
 ## Script to Create VM
 
@@ -41,7 +40,7 @@ Now you can create the Azure Resource Group and the VM from the below Script by 
 
 ```sh
 g="rg-ubuntu"
-l=eastus
+l="eastus"
 
 admin="ubuntuadmin"
 # Password: 12 letter long one caps, one small, one numeric, one special char atleast
@@ -54,7 +53,7 @@ az group create -n $g -l eastus
 
 echo "--------------- Creating Ubuntu Virtual Machine"
 # Cost saving use --use-unmanaged-disk --storage-sku "Standard_LRS"
-az vm create -n $vmname -g $g --admin-username $admin --admin-password $passwd --authentication-type password --os-disk-size-gb 200 --image ubuntults --size $size
+az vm create -n $vmname -g $g --admin-username $admin --admin-password $passwd --authentication-type password --os-disk-size-gb 200 --image ubuntults --size $size --use-unmanaged-disk --storage-sku "Standard_LRS"
 
 echo "--------------- Setting Auto-shutdown (UTC)"
 az vm auto-shutdown -n $vmname -g $g --time 1730
@@ -100,9 +99,9 @@ az vm deallocate -n $n -g $g
 
 ## Installing Tools
 
-We will be installing the below tools,
+We will be installing the below tools using [snap](https://snapcraft.io/)
 
-- Git
+- Git (already there)
 - Docker ce
 - Kubectl
 - Azure CLI
@@ -110,6 +109,7 @@ We will be installing the below tools,
 - Go
 - Python (already there)
 - Node.js
+- Open JDK
 
 You can make a file like `script.sh` and save to your home directory. Then follow few steps,
 
@@ -198,6 +198,23 @@ minikube start
 [https://youtu.be/UkiPauLyzg4](https://youtu.be/UkiPauLyzg4)
 
 This should ideally setup your dev environment.
+
+## Clean Up everythin
+
+Simply go to Azure Portal and delete the resource group or run the below command
+
+```sh
+az group delete -n RESOURCE_GROUP_NAME
+```
+
+## Troubleshooting
+
+Notice in this script there are 9 Taks and the terminal will print the current tasks and its output. At any given point in time if the terminal ends due to any reason without moving further then the tools are not installed completely,
+
+- You run the same script again
+- Or type `$ exit` and this would start executing the remaining of the script.
+
+> Most of the time error could be due to the docker group and its assignment. Then run them manually. Till I find a solid way to run the flawless script.
 
 *Enjoy*  
 Wriju @wrijugh
