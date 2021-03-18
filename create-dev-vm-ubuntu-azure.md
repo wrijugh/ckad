@@ -126,69 +126,53 @@ $ ./script.sh
 
 ### Sample installation shell script
 
+> If you have the script in your local terminal then using the Public IP you can do a secure file transfer to the newly created remote VM.
+> `$ scp script.sh {adminuser}@{publicIp}:/home/{adminuser} `
+
 *Copy the whole content to* `script.sh`
 
 ```sh
 #/bin/bash
 
-echo "-------------- Task 1: Installing Git"
-sudo apt-get update
-sudo apt-get install -y git
+echo "-------------- Task 1: Snap Install"
+sudo apt update
+sudo apt install snapd
 
 echo "-------------- Task 2: Installing Kubectl"
 sudo snap install kubectl --classic
 
 echo "-------------- Task 3: Installing Azure CLI"
-
-sudo apt-get update
-yes Y | sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
-curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
-AZ_REPO=$(lsb_release -cs)
-echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+sudo snap install azure-cli --candidate
 
 echo "-------------- Task 4: Dot Net Core 5"
-wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-sudo apt-get update; \
-          sudo apt-get install -y apt-transport-https && \
-          sudo apt-get update && \
-          sudo apt-get install -y dotnet-sdk-5.0
+sudo snap install dotnet-sdk --classic
+sudo snap alias dotnet-sdk.dotnet dotnet
 
-echo "-------------- Task 5: Python"
-echo "Python3 is by default available in Ubuntu 20.04"
-echo "To Open Python use $ python3"
+echo "-------------- Task 5: Open JDK"
+sudo snap install openjdk
 
 echo "-------------- Task 6: Installing Node.js "
-yes Y | sudo apt-get install nodejs
+sudo snap install node --classic
 
 echo "-------------- Task 7: Go Lang"
-yes Y | sudo apt install golang-go
-yes Y | sudo apt install gccgo-go
+sudo snap install go --classic
 
 echo "-------------- Task 8: Installing Docker CLI"
+sudo snap install docker
 
-sudo apt-get update
-yes Y | sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-
-curl -l https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-
-sudo apt-get update
-sudo apt-get install -y docker.io
-
-#sudo groupadd docker
-sudo usermod -aG docker $USER
+set +e #on error continue
+sudo addgroup --system docker
+sudo adduser $USER docker
 newgrp docker
+sudo snap disable docker
+sudo snap enable docker
+
 
 echo "-------------- Task 9: Installing and stating Minikube"
+# sudo snap install minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
-minikube start
+
 ```
 
 ## Connecting Remote Ubuntu from Visual Studio Code
@@ -199,7 +183,7 @@ minikube start
 
 This should ideally setup your dev environment.
 
-## Clean Up everythin
+## Clean Up everything
 
 Simply go to Azure Portal and delete the resource group or run the below command
 
