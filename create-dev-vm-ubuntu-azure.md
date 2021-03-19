@@ -4,7 +4,7 @@ We can create an Ubuntu VM in Azure and install all the tools needed for it. Whi
 
 There are many ways by which you can create a VM. We will have a script to do so. While we have the script which will work on Azure CLI has some consideration.
 
-- Use unmanaged disk. This will immensely reduce the cost of VM as compared to the Standard or Premium SSD which is the default. So if we don't mention that we will use `--use-unmanaged-disk` OTHERWISE Azure CLI will use managed disk with Premium SSD.
+- Use unmanaged disk. This will immensely reduce the cost of VM as compared to the Standard or Premium SSD which is the default. We will use `--use-unmanaged-disk` OTHERWISE Azure CLI will use managed disk with Premium SSD.
   > While doing so you don't need to pre-create a storage. If we consider to create a storage and mention that it will be Locally Redundant then it would first find if there is any such storage matching the criteria. If nothing is found then it would create the storage before creating the VM.
 - Network: Virtual Network, Subnet, Public IP, NSG (for port 22), NIC all will be created automatically by Azure CLI before the VM creation.
 - Enable Auto-Shutdown. We must explicitly apply this setting post VM creation it is provisioned. A big cost saving.
