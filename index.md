@@ -165,7 +165,6 @@ You describe a desired state in a Deployment, and the Deployment Controller chan
 
 In a real production environment, we don't manage Pods rather Kubernetes deployment manages the Pods. However, if there is a change or update required, we prefer not to shut down the whole environment but rather roll it over slowly. If you have four replicas then probably it will take down one at a time and update 4 pods one after another, rather than doing altogether. This purely depends on the requirement of your application, if you don't want to have any older version running while updating the newer version, you can have the complete update without choosing the rollout kind of behavior.
 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mntc_h6nKAc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [https://youtu.be/mntc_h6nKAc](https://youtu.be/mntc_h6nKAc)
@@ -197,7 +196,7 @@ A Job creates one or more Pods and will continue to retry execution of the Pods 
 
 ## Kubernetes CKAD Tips 13 – CronJobs
 
-A CronJob creates Jobs on a repeating schedule. Say a Pod which reminds you to take breakfast every morning at 7 AM. 
+A CronJob creates Jobs on a repeating schedule. Say a Pod which reminds you to take breakfast every morning at 7 AM.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OigbgMm3_C4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -210,6 +209,7 @@ Pod and deployments are well thought through design components. They help do the
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_sxGRlMza-0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [https://youtu.be/_sxGRlMza-0](https://youtu.be/_sxGRlMza-0)
+
 ## Kubernetes CKAD Tips 15 – Multi-container Pod
 
 A Pod generally runs one container most of the time. But it is capable of running more than one containers. So a single pod can host two containers supporting each other for an application need. Assume that your application will cache the data in Redis which is another container. You can host both Application and Redis in same pod. This becomes easier to manage. Also using multi-container we can check the initialization process for an application. In that case we use InitContainer concept. Other kind of multi container patterns include Sidecar and Ambassador pattern.
@@ -240,26 +240,25 @@ The kubelet uses liveness probes to know when to restart a container. For exampl
 <iframe width="560" height="315" src="https://www.youtube.com/embed/793TftO6iSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [https://youtu.be/793TftO6iSI](https://youtu.be/793TftO6iSI)
-<!-- ## Kubernetes CKAD Tips 18 – Readiness Probe
+
+## Kubernetes CKAD Tips 18 – Readiness Probe
 
 The kubelet uses readiness probes to know when a container is ready to start accepting traffic. A Pod is considered ready when all of its containers are ready. One use of this signal is to control which Pods are used as backends for Services. When a Pod is not ready, it is removed from Service load balancers.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QmtLiDFtORo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[https://youtu.be/](https://youtu.be/)
+[https://youtu.be/QmtLiDFtORo](https://youtu.be/QmtLiDFtORo)
+
 ## Kubernetes CKAD Tips 19 – Startup Probe
 
 The kubelet uses startup probes to know when a container application has started. If such a probe is configured, it disables liveness and readiness checks until it succeeds, making sure those probes don't interfere with the application startup. This can be used to adopt liveness checks on slow starting containers, avoiding them getting killed by the kubelet before they are up and running.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kXGWsDVKfmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[https://youtu.be/](https://youtu.be/)
-
-## Kubernetes CKAD Tips 20 – 
- -->
+[https://youtu.be/kXGWsDVKfmM](https://youtu.be/kXGWsDVKfmM)
 
 ---
-More coming soon...
+*More coming soon...*
 
 Subscribe to the Channel [TechTalks-Wriju](https://www.youtube.com/channel/UCUzFKvlZOm3ukAiF59B_HgQ)
 
