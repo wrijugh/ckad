@@ -291,7 +291,7 @@ Environment Variables are like the config values of an application. Instead of p
 
 [https://youtu.be/8-CCKtvSmMM](https://youtu.be/8-CCKtvSmMM)
 
-## Kubernetes CKAD Tips 24 – ConfigMaps from literals, env files and txt files
+## Kubernetes CKAD Tips 24 – ConfigMaps Create from literals, env files and txt files
 
 A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
@@ -324,7 +324,7 @@ How can we mount ConfigMaps keys as files in a mapped volume inside a Pod. This 
 
 [https://youtu.be/_Sqy6vi6fWo](https://youtu.be/_Sqy6vi6fWo)
 
-## Kubernetes CKAD Tips 28 – Secrets create
+## Kubernetes CKAD Tips 28 – Secrets Create and View
 
 Kubernetes Secrets let you store and manage sensitive information, such as passwords, OAuth tokens, and ssh keys. Storing confidential information in a Secret is safer and more flexible than putting it verbatim in a Pod definition or in a container image.
 
@@ -332,11 +332,60 @@ Kubernetes Secrets let you store and manage sensitive information, such as passw
 
 [https://youtu.be/QXUZKZhaw9w](https://youtu.be/QXUZKZhaw9w)
 
+## Kubernetes CKAD Tips 29 – Secret Load as volume
+
+Load Secrets as volume and mount that to a container. They key(s) will become the file(s) name and the value(s) (decoded) are the text within the file(s).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BudGY6jwnSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/BudGY6jwnSU](https://youtu.be/BudGY6jwnSU)
+
+## Kubernetes CKAD Tips 30 – Secret Load as env variable
+
+You can populate one or more environment variable from Secret object.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a2L9zBLJJCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/a2L9zBLJJCQ](https://youtu.be/a2L9zBLJJCQ)
+
+## Kubernetes CKAD Tips 31 – Pod Limits Memory and CPU
+
+When we create Pod we can set the minimum and maximum limit of CPU and Memory. That way we can ensure the best performance of our container and have the right node to host this as well.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V5-xo5UjCjI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/V5-xo5UjCjI](https://youtu.be/V5-xo5UjCjI)
+
+## Kubernetes CKAD Tips 32 – Node memory and CPU usage
+
+Using kubectl top we can find the current node memory and cpu usage to understand if we have enough space available to host yet another Pod.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/67c7DhxVN4M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/67c7DhxVN4M](https://youtu.be/67c7DhxVN4M)
+
+## Kubernetes CKAD Tips 33 – Network Policy
+
+This is best video on Network Policy explained. Please watch
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3gGpMmYeEO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/3gGpMmYeEO8](https://youtu.be/3gGpMmYeEO8)
+
+## Kubernetes CKAD Tips 34 – Kubectl General Tips
+
+Kubeclt is the ClI for Kubernetes. There are few tips I have shared here. There are many and getting comfortable is the key here.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3KpQV3REYnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/3KpQV3REYnY](https://youtu.be/3KpQV3REYnY)
+
+
 ---
 *More coming soon...*
 
 Subscribe to the Channel [TechTalks-Wriju](https://www.youtube.com/channel/UCUzFKvlZOm3ukAiF59B_HgQ)
 
-The [Kubernetes and CKAD Playlist](https://www.youtube.com/playlist?list=PLPIVZsyfpXt-wyNY65-aC9Vm_PEsM3pR8)
+The [Kubernetes and CKAD Tips Playlist](https://www.youtube.com/playlist?list=PLPIVZsyfpXt-wyNY65-aC9Vm_PEsM3pR8)
 
 [GitHub Project](https://github.com/wrijugh/ckad/tree/master)
