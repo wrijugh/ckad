@@ -296,21 +296,41 @@ Environment Variables are like the config values of an application. Instead of p
 A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RO3fn--e9k0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/RO3fn--e9k0](https://youtu.be/RO3fn--e9k0)
+
 ## Kubernetes CKAD Tips 25 – ConfigMaps as single or more env variables
 
 Using the ConfigMap object how can we populate an environment variable (one or more).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0tsigMtHs5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/0tsigMtHs5g](https://youtu.be/0tsigMtHs5g)
 
 ## Kubernetes CKAD Tips 26 – ConfigMaps as all values in env variables
 
 Using the ConfigMap object how can we populate set of environment variables. No matter how many keys we have in the ConfigMap, this process would produce the list of Environment variable from that.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m_wt5zj4XhI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/m_wt5zj4XhI](https://youtu.be/m_wt5zj4XhI)
+
 ## Kubernetes CKAD Tips 27 – ConfigMaps as Volume Mount
 
 How can we mount ConfigMaps keys as files in a mapped volume inside a Pod. This way we have n number of files inside a folder where this n is the total number of Keys within a ConfigMap.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Sqy6vi6fWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/_Sqy6vi6fWo](https://youtu.be/_Sqy6vi6fWo)
+
 ## Kubernetes CKAD Tips 28 – Secrets create
 
 Kubernetes Secrets let you store and manage sensitive information, such as passwords, OAuth tokens, and ssh keys. Storing confidential information in a Secret is safer and more flexible than putting it verbatim in a Pod definition or in a container image.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QXUZKZhaw9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/QXUZKZhaw9w](https://youtu.be/QXUZKZhaw9w)
 
 ---
 *More coming soon...*
