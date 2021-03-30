@@ -257,9 +257,66 @@ The kubelet uses startup probes to know when a container application has started
 
 [https://youtu.be/kXGWsDVKfmM](https://youtu.be/kXGWsDVKfmM)
 
+## Kubernetes CKAD Tips 20 – Volume Mount
+
+Inside a Pod in a Container there could be a requirement to save the file or read from. In this case we can create a mapped folder in the container pointing to an external storage (could be cloud too). That way in a multi-container Pod scenario we can write to a file and read the same file from two separate containers. There are many ways to create this mapped drive. We will see the {EmptyDir} option which creates a temp directory in the Node. You can also select the external persistent storage like Cloud Storage. This will be there even if the Node is re-created.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tXMHgbiIK9s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/tXMHgbiIK9s](https://youtu.be/tXMHgbiIK9s)
+
+## Kubernetes CKAD Tips 21 – Container Port
+
+Often container hosts an application which is available via a specific port. For example, the Nginx container uses Port 80 to expose the http endpoint. If there is a specific port which needs to be exposed, we can do so by defining containerPort in the YAML.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WK_6Wn7cQrs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/WK_6Wn7cQrs](https://youtu.be/WK_6Wn7cQrs)
+
+## Kubernetes CKAD Tips 22 – Persistent Volume
+
+Managing storage is a distinct problem from managing compute instances. The PersistentVolume subsystem provides an API for users and administrators that abstracts details of how storage is provided from how it is consumed. To do this, we introduce two new API resources: PersistentVolume and PersistentVolumeClaim.
+A PersistentVolume (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource. PVs are volume plugins like Volumes but have a lifecycle independent of any individual Pod that uses the PV. This API object captures the details of the implementation of the storage, be that NFS, iSCSI, or a cloud-provider-specific storage system.
+A PersistentVolumeClaim (PVC) is a request for storage by a user. It is like a Pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., they can be mounted ReadWriteOnce, ReadOnlyMany or ReadWriteMany).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LK1elNQk3L4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/LK1elNQk3L4](https://youtu.be/LK1elNQk3L4)
+
+## Kubernetes CKAD Tips 23 – Environment variables
+
+Environment Variables are like the config values of an application. Instead of passing them as part of a text file in a containerized application, we can have them as Environment variables. That way in every deployment we could change as needed. They are needed but they don’t belong to the codebase. Here is a quick way how we can add them to a container inside a Pod and then modify when needed in YAML.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8-CCKtvSmMM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/8-CCKtvSmMM](https://youtu.be/8-CCKtvSmMM)
+
+## Kubernetes CKAD Tips 24 – ConfigMaps from literals, env files and txt files
+
+A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
+A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
+
+## Kubernetes CKAD Tips 25 – ConfigMaps as single or more env variables
+
+Using the ConfigMap object how can we populate an environment variable (one or more).
+
+## Kubernetes CKAD Tips 26 – ConfigMaps as all values in env variables
+
+Using the ConfigMap object how can we populate set of environment variables. No matter how many keys we have in the ConfigMap, this process would produce the list of Environment variable from that.
+
+## Kubernetes CKAD Tips 27 – ConfigMaps as Volume Mount
+
+How can we mount ConfigMaps keys as files in a mapped volume inside a Pod. This way we have n number of files inside a folder where this n is the total number of Keys within a ConfigMap.
+
+## Kubernetes CKAD Tips 28 – Secrets create
+
+Kubernetes Secrets let you store and manage sensitive information, such as passwords, OAuth tokens, and ssh keys. Storing confidential information in a Secret is safer and more flexible than putting it verbatim in a Pod definition or in a container image.
+
 ---
 *More coming soon...*
 
 Subscribe to the Channel [TechTalks-Wriju](https://www.youtube.com/channel/UCUzFKvlZOm3ukAiF59B_HgQ)
 
 The [Kubernetes and CKAD Playlist](https://www.youtube.com/playlist?list=PLPIVZsyfpXt-wyNY65-aC9Vm_PEsM3pR8)
+
+[GitHub Project](https://github.com/wrijugh/ckad/tree/master)
