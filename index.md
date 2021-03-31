@@ -380,6 +380,11 @@ Kubeclt is the ClI for Kubernetes. There are few tips I have shared here. There 
 
 [https://youtu.be/3KpQV3REYnY](https://youtu.be/3KpQV3REYnY)
 
+## Kubernetes CKAD Tips 35 – CKAD Exam Tips
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yeFvRCnq2U8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[https://youtu.be/yeFvRCnq2U8](https://youtu.be/yeFvRCnq2U8)
 
 ---
 *More coming soon...*
