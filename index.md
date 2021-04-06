@@ -93,7 +93,7 @@ Kubernetes runs container. But it is not mandatory to have only docker as its co
 
 ## Kubernetes under 10 minutes
 
-CKAD exam is a performance-based exam. That means you will be given Linux console and asked to solve certain problems. There is no objective type question. This means you not only have two know hands on about Kubernetes but also be very comfortable and quick in solving the problems. In this section I will try to share some of the tips and tricks of using Kubectl and configuring few basic stuff.
+CKAD exam is a performance-based exam. That means you will be given Linux console and asked to solve certain problems. There is no objective type question. You not only have to know Kubernetes hands-on but also be very comfortable and quick in solving the problems. In this section I wil try to share some of the tips and tricks of using CLI Kubectl and configuring basic building blocks.
 
 ## Kubernetes CKAD Tips 1 - Using Katacoda - A free Kubernetes Playground
 
@@ -107,7 +107,7 @@ This video talks about how we can use Katacoda.
 
 ## Kubernetes CKAD Tips 2 - Breaking the myths - CKAD does not require programming knowledge
 
-CKAD (Certified Kubernetes Application Developer) the word "Developer" does not mean that it will ask you to write code. If you have no development experience and never done any programming then don't worry - none of those skills are required here. So have a look into the CNCF's official curriculum and jump into it.
+CKAD (Certified Kubernetes Application Developer) the word "Developer" does not mean that it will ask you to write code. If you have no development experience and never done any programming work, don't worry - none of those skills are required here. You can still sit for the exam and clear with a flying color. So have a look into the CNCF's official curriculum and jump into it.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/25VKXVzhIz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
