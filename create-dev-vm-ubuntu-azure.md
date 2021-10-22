@@ -142,7 +142,8 @@ echo "-------------- Task 2: Installing Kubectl"
 sudo snap install kubectl --classic
 
 echo "-------------- Task 3: Installing Azure CLI"
-sudo snap install azure-cli --candidate
+# sudo snap install azure-cli --candidate 
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 echo "-------------- Task 4: Dot Net Core 5"
 sudo snap install dotnet-sdk --classic
