@@ -1,5 +1,7 @@
 # CKAD Tips and Tricks
 
+[Home](index.md)
+
 There are a many of these tips. I am highlighting few here which helped me get the grip on Kubernetes. 
 
 ## 0 - Practice, Practice and Practice
@@ -34,6 +36,10 @@ This will help you get used to the sluggy experience of Linux console in browser
 ## 4 - Use kubectl alias
 Use `alias k=kubectl` for faster typing 
 
+```bash
+$ alias k=kubectl
+```
+
 ## 5 - Learn from Kubectl cheatsheet
 Kubectl Cheatsheet is a great to way to have a quick view on the few aspects of Kubectl. This is the CLI which would be used in the exam. [Kubectl CheatSheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
@@ -58,4 +64,35 @@ Also there are few other in cli like
 ...
 ```
 
-## 7 - 
+## 7 - Use dry-run
+
+```bash
+$ kubectl run web2 --image=nginx --dry-run=client -oyaml > pod.yaml
+```
+## 8 - Delete with no-grace
+
+```bash
+$ kubectl delete po web --grace-period=0 --force=true
+```
+
+## 9 - Bookmark difficult parts
+Bookmark in the local browser.
+
+## 10 - kubectl apply/create/delete
+
+```bash
+$ kubectl apply -f pod.yaml
+```
+
+```bash
+$ kubectl delete -f pod.yaml
+```
+
+## 11 - Yaml does not like 'tab'
+No TAB
+
+## 12 - Cluster context switch
+
+```bash
+$ kubectl config 
+```

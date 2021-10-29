@@ -394,3 +394,5 @@ Subscribe to the Channel [TechTalks-Wriju](https://www.youtube.com/channel/UCUzF
 The [Kubernetes and CKAD Tips Playlist](https://www.youtube.com/playlist?list=PLPIVZsyfpXt-wyNY65-aC9Vm_PEsM3pR8)
 
 [GitHub Project](https://github.com/wrijugh/ckad/tree/master)
+
+[CKAD Tips and Tricks](ckad-tips.md)
